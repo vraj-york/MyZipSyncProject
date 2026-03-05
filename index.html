@@ -4,8 +4,17 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>OtterMon AI - Web UI/UX</title>
-    </head>
+      <title>N8N Bazar Landing Page</title>
+    <script src="http://localhost:5000/static/feedback-widget.min.js"></script>
+  <script>
+  (function(){
+    var u="http://localhost:5000";
+    var p="20";
+    function run(){if(typeof FeedbackWidget!=="undefined")FeedbackWidget.init({projectId:p,apiUrl:u});}
+    if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",run);}else{run();}
+  })();
+  </script>
+</head>
 
     <body>
 
@@ -105,7 +114,7 @@
     let isLocked = false;
     let projectId = 20;
     let releaseId = 31;
-    let version = "1.0.0";
+    let version = "1.0.1";
     let projectName = "1.1.0";
     let apiBase = "http://localhost:5000";
     let headerType = "release";
