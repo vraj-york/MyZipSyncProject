@@ -5,16 +5,7 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>July - Hub Socrates</title>
-    <script src="http://localhost:5000/static/feedback-widget.min.js"></script>
-  <script>
-  (function(){
-    var u="http://localhost:5000";
-    var p="20";
-    function run(){if(typeof FeedbackWidget!=="undefined")FeedbackWidget.init({projectId:p,apiUrl:u});}
-    if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",run);}else{run();}
-  })();
-  </script>
-</head>
+    </head>
 
     <body>
 
@@ -114,7 +105,7 @@
     let isLocked = false;
     let projectId = 20;
     let releaseId = 30;
-    let version = "1.0.2";
+    let version = "1.0.3";
     let projectName = "1.0.0";
     let apiBase = "http://localhost:5000";
     let headerType = "release";
